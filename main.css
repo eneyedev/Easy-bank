@@ -1,0 +1,433 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  --dark-blue: hsl(233, 26%, 24%);
+  --lime-green: hsl(136, 65%, 51%);
+  --bright-cyan: hsl(192, 70%, 51%);
+  --grayish-blue: hsl(233, 8%, 62%);
+  --light-grayish-blue: hsl(220, 16%, 96%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  --White: hsl(0, 0%, 100%);
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+.h1 {
+  font-size: 40px;
+  color: var(--dark-blue);
+}
+
+.h2 {
+  font-size: 30px;
+  color: var(--dark-blue);
+}
+
+.h3 {
+  font-size: 22px;
+  color: var(--dark-blue);
+}
+
+.h4 {
+  font-size: 18px;
+  color: var(--dark-blue);
+}
+
+.p1 {
+  color: var(--grayish-blue);
+}
+
+.p2 {
+  color: var(--grayish-blue);
+  font-size: 15px;
+}
+
+.p3 {
+  color: var(--grayish-blue);
+  font-size: 13px;
+}
+
+.btn1 {
+  background: var(--lime-green);
+  padding: 0.8rem;
+  border: 0;
+  cursor: pointer;
+  outline: 0;
+  color: var(--light-grayish-blue);
+  font-weight: 600;
+  border-radius: 5rem;
+}
+
+.mobile-none {
+  display: none;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.easy-banking__header {
+  background: white;
+  width: 100%;
+  padding: 1rem;
+  position: fixed;
+}
+
+.easy-banking__header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.links {
+  position: absolute;
+  background: white;
+  padding: 2rem;
+  font-size: 17px;
+  top: 4rem;
+  left: 0;
+  right: 0;
+  gap: 1.7rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: black 0 0 60rem -5rem;
+  display: none;
+}
+
+.links li {
+  cursor: pointer;
+}
+
+.header-links:hover .links {
+  display: flex;
+}
+
+.menu {
+  cursor: pointer;
+}
+
+.header-links:hover .menu {
+  display: none;
+}
+
+.close {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  top: -3.9rem;
+  right: 0;
+}
+
+.links .close {
+  display: block;
+}
+
+.next-generation__img {
+  background: url("img/bg-intro-mobile.svg") center center/cover no-repeat;
+  width: 100%;
+}
+
+.next-generation__img img {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.next-generation__texts {
+  text-align: center;
+}
+
+.next-generation__texts .p1 {
+  margin-top: 1rem;
+}
+
+.next-generation__texts .btn1 {
+  width: 35%;
+  padding: 0.9rem;
+  margin-top: 1.5rem;
+}
+
+.easy-banking__why-choose-bank {
+  margin-top: 5rem;
+  text-align: center;
+  background: var(--light-grayish-blue);
+  padding: 1rem;
+}
+
+.easy-banking__why-choose-bank .wrapper {
+  width: 100%;
+  margin: auto;
+  max-width: 90%;
+}
+
+.why-choose-bank__intro {
+  margin-top: 2rem;
+}
+
+.why-choose-bank__intro .p1 {
+  margin-top: 1rem;
+}
+
+.why-choose-bank__section__sec1:first-child {
+  margin-top: 4rem;
+}
+
+.why-choose-bank__section__sec1 {
+  margin-top: 2rem;
+}
+
+.why-choose-bank__section__sec1__text .h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.why-choose-bank__section__sec1__text .p2 {
+  width: 90%;
+  margin: auto;
+}
+
+.easy-banking__latest-article {
+  /*margin-top: 4rem;*/
+  padding: 2rem;
+  margin: auto;
+  background: var(--very-light-gray);
+}
+
+.latest-article__intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.latest-article__sections__sec2 {
+  background: var(--White);
+  border-bottom-left-radius: 13px;
+  margin-top: 2rem;
+  cursor: pointer;
+  border-bottom-right-radius: 13px;
+}
+
+.sec2-img {
+  width: 100%;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+}
+
+.sec2__text {
+  padding: 1.5rem;
+}
+
+.sec2__text .h4 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.sec2__text .p1 {
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+
+.easy-banking__footer {
+  background: var(--dark-blue);
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer__sec {
+  margin-top: 1rem;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  gap: 1rem;
+}
+
+.social-media li img {
+  width: 130%;
+  cursor: pointer;
+}
+
+.footer-links {
+  color: white;
+  margin-top: 2rem;
+}
+
+.footer-links li {
+  margin-top: 1rem;
+}
+
+.last {
+  margin-top: 2rem;
+}
+
+.last .btn1 {
+  width: 40%;
+  margin-bottom: 2rem;
+}
+
+.last .p3 {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 1440px) {
+  .easy-banking__header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mobile-none {
+    display: block;
+  }
+
+  .easy-banking__header .btn1 {
+    width: 120%;
+  }
+
+  .links {
+    display: flex;
+    padding: 0;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: row;
+    position: unset;
+    background: none;
+  }
+
+  .menu,
+  .close {
+    display: none;
+  }
+
+  .easy-banking__next-generation {
+    display: flex;
+    text-align: left;
+    justify-content: left;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 80vh;
+  }
+
+  .next-generation__img {
+    width: 50%;
+    z-index: -1;
+    right: 0;
+    /* margin-right: 0; */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    place-content: end;
+    position: absolute;
+    /*margin-left: 48rem;*/
+  }
+
+  .next-generation__img img {
+    width: 70%;
+    margin-left: 20rem;
+  }
+
+  .next-generation__texts {
+    text-align: left;
+    margin-top: 10rem;
+  }
+
+  .next-generation__texts .h1 {
+    font-size: 60px;
+    width: 40%;
+    display: block;
+  }
+
+  .next-generation__texts .p1 {
+    font-size: 20px;
+    width: 50%;
+    display: block;
+  }
+
+  .next-generation__texts .btn1 {
+    width: 20%;
+  }
+
+  .why-choose-bank__section {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .easy-banking__why-choose-bank .wrapper {
+    width: 90%;
+    text-align: left;
+    margin: auto;
+    max-width: 1440px;
+  }
+
+  .why-choose-bank__intro {
+    width: 100%;
+    max-width: 40%;
+  }
+
+  .why-choose-bank__intro .h2 {
+    font-size: 40px;
+  }
+
+  .why-choose-bank__section__sec1__text .p2 {
+    text-align: left;
+    margin: unset;
+  }
+
+  .latest-article__sections {
+    display: flex;
+    align-items: baseline;
+    gap: 3rem;
+  }
+
+  .easy-banking__footer {
+    margin-top: 5rem;
+  }
+
+  .easy-banking__footer .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer__sec:first-child {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+  }
+
+  .logo-etc {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .link-flex {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+  }
+
+  .footer-links {
+    margin-top: 0;
+  }
+
+  .last .btn1 {
+    width: 80%;
+  }
+}
